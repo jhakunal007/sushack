@@ -162,7 +162,7 @@ function SignUp({ onLogin }: { onLogin: (name: string) => void }) {
         e.preventDefault();
         if (name && email && password) onLogin(name);
     };
-   <div className="signup-card" style={{ maxWidth: '400px', width: '100%', margin: 'auto', padding: '2rem' }}>
+   return <div className="signup-card" style={{ maxWidth: '400px', width: '100%', margin: 'auto', padding: '2rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <div className="brand-mark" style={{ margin: '0 auto 1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '48px', height: '48px', background: 'var(--primary)', color: 'white', borderRadius: '12px' }}><Leaf size={28} /></div>
             <h2 style={{ marginBottom: '0.5rem', fontSize: '1.5rem' }}>Join ClimateSync</h2>
